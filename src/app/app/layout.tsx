@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
+
 import { Geist, Geist_Mono } from "next/font/google";
 import  "bootstrap/dist/css/bootstrap.min.css"
+import "../../asset/css/globals.css";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
-import "@/asset/css/globals.css";
+import Header from "@/components/layouts/Header";
+import Footer from "@/components/layouts/Footer";
+import Sidenav from "@/components/layouts/Sidenav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,10 +32,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <>
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <div className="d-flex">
+          <aside className="sidenav">
+            <Sidenav />
+          </aside>
+          <div className="main-content">
+            <Header />
+            <main className="p-4 m-4 rounded-5 shadow">
+              {children}
+            </main>
+          </div>
+        </div>
       </body>
     </html>
+    </>
   );
 }

@@ -1,0 +1,204 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john.doe@company.com",
+            "position": "Software Engineer",
+            "department": "Engineering",
+            "salary": 60000
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "email": "jane.smith@company.com",
+            "position": "Project Manager",
+            "department": "Management",
+            "salary": 80000
+        },
+        {
+            "id": 3,
+            "name": "Alice Johnson",
+            "email": "alice.johnson@company.com",
+            "position": "UX Designer",
+            "department": "Design",
+            "salary": 70000
+        },
+        {
+            "id": 4,
+            "name": "Bob Brown",
+            "email": "bob.brown@company.com",
+            "position": "Data Analyst",
+            "department": "Analytics",
+            "salary": 65000
+        },
+        {
+            "id": 5,
+            "name": "Charlie White",
+            "email": "charlie.white@company.com",
+            "position": "DevOps Engineer",
+            "department": "Operations",
+            "salary": 75000
+        },
+        {
+            "id": 6,
+            "name": "Diana Prince",
+            "email": "diana.prince@company.com",
+            "position": "HR Specialist",
+            "department": "Human Resources",
+            "salary": 55000
+        },
+        {
+            "id": 7,
+            "name": "Ethan Hunt",
+            "email": "ethan.hunt@company.com",
+            "position": "QA Engineer",
+            "department": "Quality Assurance",
+            "salary": 62000
+        },
+        {
+            "id": 8,
+            "name": "Fiona Gallagher",
+            "email": "fiona.gallagher@company.com",
+            "position": "Marketing Manager",
+            "department": "Marketing",
+            "salary": 78000
+        },
+        {
+            "id": 9,
+            "name": "George Martin",
+            "email": "george.martin@company.com",
+            "position": "Business Analyst",
+            "department": "Business",
+            "salary": 67000
+        },
+        {
+            "id": 10,
+            "name": "Hannah Lee",
+            "email": "hannah.lee@company.com",
+            "position": "Frontend Developer",
+            "department": "Engineering",
+            "salary": 63000
+        },
+        {
+            "id": 11,
+            "name": "Ian Wright",
+            "email": "ian.wright@company.com",
+            "position": "Backend Developer",
+            "department": "Engineering",
+            "salary": 64000
+        },
+        {
+            "id": 12,
+            "name": "Julia Roberts",
+            "email": "julia.roberts@company.com",
+            "position": "Content Writer",
+            "department": "Marketing",
+            "salary": 52000
+        },
+        {
+            "id": 13,
+            "name": "Kevin Hart",
+            "email": "kevin.hart@company.com",
+            "position": "Support Engineer",
+            "department": "Support",
+            "salary": 54000
+        },
+        {
+            "id": 14,
+            "name": "Laura King",
+            "email": "laura.king@company.com",
+            "position": "Recruiter",
+            "department": "Human Resources",
+            "salary": 56000
+        },
+        {
+            "id": 15,
+            "name": "Mike Tyson",
+            "email": "mike.tyson@company.com",
+            "position": "Security Analyst",
+            "department": "Security",
+            "salary": 69000
+        },
+        {
+            "id": 16,
+            "name": "Nina Simone",
+            "email": "nina.simone@company.com",
+            "position": "Product Owner",
+            "department": "Product",
+            "salary": 85000
+        },
+        {
+            "id": 17,
+            "name": "Oscar Wilde",
+            "email": "oscar.wilde@company.com",
+            "position": "Copywriter",
+            "department": "Marketing",
+            "salary": 51000
+        },
+        {
+            "id": 18,
+            "name": "Paula Abdul",
+            "email": "paula.abdul@company.com",
+            "position": "Office Manager",
+            "department": "Administration",
+            "salary": 58000
+        },
+        {
+            "id": 19,
+            "name": "Quentin Blake",
+            "email": "quentin.blake@company.com",
+            "position": "Graphic Designer",
+            "department": "Design",
+            "salary": 60000
+        },
+        {
+            "id": 20,
+            "name": "Rachel Green",
+            "email": "rachel.green@company.com",
+            "position": "Sales Executive",
+            "department": "Sales",
+            "salary": 72000
+        },
+        {
+            "id": 21,
+            "name": "Steve Rogers",
+            "email": "steve.rogers@company.com",
+            "position": "Network Engineer",
+            "department": "IT",
+            "salary": 70000
+        },
+        {
+            "id": 22,
+            "name": "Tina Turner",
+            "email": "tina.turner@company.com",
+            "position": "Finance Manager",
+            "department": "Finance",
+            "salary": 83000
+        },
+        {
+            "id": 23,
+            "name": "Uma Thurman",
+            "email": "uma.thurman@company.com",
+            "position": "Legal Advisor",
+            "department": "Legal",
+            "salary": 90000
+        },
+        {
+            "id": 24,
+            "name": "Victor Hugo",
+            "email": "victor.hugo@company.com",
+            "position": "Database Administrator",
+            "department": "IT",
+            "salary": 71000
+        },
+        {
+            "id": 25,
+            "name": "Wendy Williams",
+            "email": "wendy.williams@company.com",
+            "position": "Customer Success Manager",
+            "department": "Support",
+            "salary": 75000
+        }
+    ]
+}

@@ -1,0 +1,169 @@
+:root {
+  --background: #ffffff;
+  --background-light: #FFF4F6;
+  --foreground: #171717;
+  --foreground-light: #252026;
+  --primary: #D82F5A;
+  --sidebar-width: 250px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --background-light: #252026;
+    --foreground: #ededed;
+    --foreground-light: #FFF4F6;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground) !important;
+  background: var(--background-light) !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  min-height: 100vh !important;
+  width: 100% !important;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.header .search-input {
+  background: var(--background);
+  width: 350px;
+}
+
+.sidenav {
+  width: 220px;
+  transition: width 0.3s ease;
+  overflow: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1; /* Fills remaining space */
+  padding-top: 0;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+main {
+  background: var(--background);
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
+
+.sidenav ul li {
+  padding: 1rem;
+}
+
+.sidenav ul li a {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.sidenav ul .active {
+  color: var(--primary);
+  font-weight: bolder;
+}
+
+.sidenav ul li:hover {
+  background-color: var(--primary);
+  color: white ;
+}
+
+.color-primary {
+  color: var(--primary) !important; 
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: white !important;
+}
+
+.btn-secondary {
+  border: 1px solid var(--primary) !important;
+  color: var(--primary) !important;
+  background-color: transparent !important;
+}
+
+.background-light {
+  background: var(--background-light) !important;
+}
+
+.themed-bg {
+  background: var(--background) !important;
+}
+
+form .form-control::placeholder {
+  color: var(--foreground) !important;
+  opacity: 0.4 !important; 
+}
+
+form .form-control {
+  color: var(--foreground) !important;
+}
+
+.mini-form {
+  width: 500px; 
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.primary-border {
+  border: 1px solid var(--primary);
+}
+
+@media (max-width: 767px) {
+  .sidenav {
+    width: 50px;
+    padding: 0;
+  }
+
+  .sidenav .link-text, .search-input {
+    display: none;
+  }
+
+  .header {
+    justify-content: right !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets */
+  main {
+    /* Example changes */
+    padding: 2rem;
+    font-size: 16px;
+  }
+}

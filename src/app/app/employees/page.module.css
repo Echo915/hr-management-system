@@ -1,0 +1,19 @@
+:root {
+  --background: #ffffff;
+  --background-light: #FFF4F6;
+  --foreground: #171717;
+  --primary: #D82F5A;
+  --sidebar-width: 250px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --background-light: #252026;
+    --foreground: #ededed;
+  }
+}
+
+.bg-light {
+  background-color: var(--background-light) !important;
+}

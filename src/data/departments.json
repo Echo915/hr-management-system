@@ -1,0 +1,39 @@
+{
+    "departments": [
+        {
+            "id": 1,
+            "name": "Human Resources",
+            "description": "Responsible for managing employee relations, recruitment, and compliance with labor laws."
+        },
+        {
+            "id": 2,
+            "name": "Finance",
+            "description": "Handles financial planning, budgeting, and financial reporting."
+        },
+        {
+            "id": 3,
+            "name": "IT",
+            "description": "Manages the company's technology infrastructure and provides technical support."
+        },
+        {
+            "id": 4,
+            "name": "Marketing",
+            "description": "Responsible for promoting the company's products and services."
+        },
+        {
+            "id": 5,
+            "name": "Sales",
+            "description": "Handles sales strategies, customer relationships, and revenue generation."
+        },
+        {
+            "id": 6,
+            "name": "Operations",
+            "description": "Oversees the day-to-day operations of the company to ensure efficiency."
+        },
+        {
+            "id": 7,
+            "name": "Customer Support",
+            "description": "Provides assistance and support to customers regarding products and services."
+        }
+    ]
+}
