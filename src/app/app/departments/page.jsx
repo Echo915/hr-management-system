@@ -4,11 +4,11 @@ import('bootstrap/dist/js/bootstrap.bundle.min.js');
 import PageHeading from "@/components/common/PageHeading";
 import Table from "@/components/common/Table";
 import { useRouter } from "next/navigation";
-import { useState, effect, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Departments = () => {
     const router = useRouter();
-    const [ data, setData ] = useState({});
+    const [ data, setData ] = useState([]);
     // const data = JSON.parse(localStorage.getItem('departments'));
     const [ toDelete, setToDelete ] = useState('');
 
@@ -21,10 +21,11 @@ const Departments = () => {
     }
 
     const handleDelete = (e) => {
-        const departments = JSON.parse(localStorage.getItem("departments"));
-        const updatedDepartments = departments.filter(department => department.id != toDelete);
-        localStorage.setItem("departments", JSON.stringify(updatedDepartments));
-        router.push("/app/departments");
+        if (typeof window !== 'undefined') {
+            const updatedDepartments = data.filter(department => department.id != toDelete);
+            localStorage.setItem("departments", JSON.stringify(updatedDepartments));
+            router.push("/app/departments");
+        }
     }
 
     const columns = [
