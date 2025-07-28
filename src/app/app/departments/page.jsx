@@ -4,33 +4,27 @@ import('bootstrap/dist/js/bootstrap.bundle.min.js');
 import PageHeading from "@/components/common/PageHeading";
 import Table from "@/components/common/Table";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, effect, useEffect } from "react";
 
 const Departments = () => {
     const router = useRouter();
-    const [data, setData] = useState([]);
-    const [toDelete, setToDelete] = useState('');
+    const [ data, setData ] = useState({});
+    // const data = JSON.parse(localStorage.getItem('departments'));
+    const [ toDelete, setToDelete ] = useState('');
 
-    // Load departments from localStorage on client side
-    React.useEffect(() => {
-        if (typeof window !== "undefined") {
-            const departments = JSON.parse(localStorage.getItem('departments')) || [];
-            setData(departments);
-        }
-    }, []);
+    useEffect(() => {
+        setData(JSON.parse(localStorage.getItem('departments')));
+    }, [])
 
     const initializeDelete = (e) => {
         setToDelete(e.target.id);
     }
 
-    const handleDelete = () => {
-        if (typeof window !== "undefined") {
-            const departments = JSON.parse(localStorage.getItem("departments")) || [];
-            const updatedDepartments = departments.filter(department => department.id != toDelete);
-            localStorage.setItem("departments", JSON.stringify(updatedDepartments));
-            setData(updatedDepartments);
-            router.push("/app/departments");
-        }
+    const handleDelete = (e) => {
+        const departments = JSON.parse(localStorage.getItem("departments"));
+        const updatedDepartments = departments.filter(department => department.id != toDelete);
+        localStorage.setItem("departments", JSON.stringify(updatedDepartments));
+        router.push("/app/departments");
     }
 
     const columns = [
