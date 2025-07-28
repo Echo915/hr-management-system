@@ -9,11 +9,11 @@ import { useState, useEffect } from "react";
 const Departments = () => {
     const router = useRouter();
     const [ data, setData ] = useState([]);
-    // const data = JSON.parse(localStorage.getItem('departments'));
     const [ toDelete, setToDelete ] = useState('');
 
     useEffect(() => {
-        setData(JSON.parse(localStorage.getItem('departments')));
+        let storedDepartments = JSON.parse(localStorage.getItem('departments')) || []; 
+        setData(storedDepartments);
     }, [])
 
     const initializeDelete = (e) => {
